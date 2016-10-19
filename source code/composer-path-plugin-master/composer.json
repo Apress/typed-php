@@ -1,0 +1,39 @@
+{
+    "name": "typedphp/composer-path-plugin",
+    "type": "composer-plugin",
+    "description": "A Composer plugin which allows any package to define its own install path.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christopher Pitt",
+            "email": "cgpitt@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "composer-plugin-api": "1.*"
+    },
+    "require-dev": {
+        "php": ">=5.5.0",
+        "phpunit/phpunit": "4.*",
+        "mockery/mockery": "0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "TypedPHP\\Composer\\": "source"
+        }
+    },
+    "autoload-dev": {
+        "files": [
+            "tests/TestCase.php"
+        ],
+        "psr-4": {
+            "TypedPHP\\Composer\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "class": [
+            "TypedPHP\\Composer\\PathPlugin"
+        ]
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "name": "typedphp/type-functions",
+    "description": "",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christopher Pitt",
+            "email": "cgpitt@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "files": [
+            "src/TypeFunctions.php"
+        ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload-dev": {
+        "files": [
+            "tests/Test.php"
+        ],
+        "psr-4": {
+            "TypedPHP\\Functions\\TypeFunctions\\Test\\": "tests"
+        }
+    }
+}
